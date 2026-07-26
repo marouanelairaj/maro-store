@@ -9,16 +9,17 @@ const CATEGORIES = [
 ];
 
 const PRODUCTS = [
-  { id: 17, name: "بولو رجالي محبوك أسود", cat: "clothing", price: 259, img: "/images/polo-black.jpg", trust: true },
-  { id: 18, name: "قميص مقلم أزرق وأبيض واسع", cat: "clothing", price: 189, img: "/images/shirt-stripe.jpg", trust: false },
-  { id: 19, name: "قميص بني قطيفة واسع الأكمام", cat: "clothing", price: 219, img: "/images/shirt-brown.jpg", trust: true },
-  { id: 20, name: "بلوزة كتان بنية بأكمام قصيرة", cat: "clothing", price: 199, img: "/images/top-linen.jpg", trust: false },
-  { id: 21, name: "سروال جينز أزرق غامق واسع", cat: "clothing", price: 249, img: "/images/jeans-1.jpg", trust: true },
-  { id: 22, name: "سروال جينز نسائي أزرق غامق", cat: "clothing", price: 259, img: "/images/jeans-2.jpg", trust: false },
-  { id: 23, name: "توب بدون أكمام أسود مطرز", cat: "clothing", price: 149, img: "/images/tank-black.jpg", trust: true },
-  { id: 24, name: "توب بدون أكمام رمادي غامق واشد", cat: "clothing", price: 119, img: "/images/tank-charcoal.jpg", trust: false },
-  { id: 25, name: "توب بدون أكمام أبيض قطن", cat: "clothing", price: 99, img: "/images/tank-white.jpg", trust: true },
-  { id: 26, name: "توب بدون أكمام وردي", cat: "clothing", price: 109, img: "/images/tank-pink.jpg", trust: false },
+  { id: 17, name: "بولو رجالي محبوك أسود", cat: "clothing", price: 259, img: "/3.jpg", trust: true },
+  { id: 18, name: "قميص مقلم أزرق وأبيض واسع", cat: "clothing", price: 189, img: "/8.jpg", trust: false },
+  { id: 19, name: "قميص بني قطيفة واسع الأكمام", cat: "clothing", price: 219, img: "/2.jpg", trust: true },
+  { id: 20, name: "بلوزة كتان بنية بأكمام قصيرة", cat: "clothing", price: 199, img: "/7.jpg", trust: false },
+  { id: 21, name: "سروال جينز أزرق غامق واسع", cat: "clothing", price: 249, img: "/4.jpg", trust: true },
+  { id: 22, name: "سروال جينز نسائي أزرق غامق", cat: "clothing", price: 259, img: "/5.jpg", trust: false },
+  { id: 23, name: "توب بدون أكمام أسود مطرز", cat: "clothing", price: 149, img: "/6.jpg", trust: true },
+  { id: 24, name: "توب بدون أكمام رمادي غامق واشد", cat: "clothing", price: 119, img: "/9.jpg", trust: false },
+  { id: 25, name: "توب بدون أكمام أبيض قطن", cat: "clothing", price: 99, img: "/11.jpg", trust: true },
+  { id: 26, name: "توب بدون أكمام وردي", cat: "clothing", price: 109, img: "/1.jpg", trust: false },
+  { id: 33, name: "بولو أسود بياقة كريمية", cat: "clothing", price: 269, img: "/10.jpg", trust: true },
   { id: 27, name: "حزام جلدي كلاسيكي", cat: "accessories", price: 89, img: "https://picsum.photos/seed/maro-acc-belt/500/500", trust: true },
   { id: 28, name: "نظارة شمسية عصرية", cat: "accessories", price: 129, img: "https://picsum.photos/seed/maro-acc-sunglasses/500/500", trust: false },
   { id: 29, name: "ساعة يد أنيقة", cat: "accessories", price: 299, img: "https://picsum.photos/seed/maro-acc-watch/500/500", trust: true },
@@ -26,7 +27,6 @@ const PRODUCTS = [
   { id: 31, name: "شنطة يد نسائية", cat: "accessories", price: 249, img: "https://picsum.photos/seed/maro-acc-bag/500/500", trust: false },
   { id: 32, name: "سلسلة رقبة فضية", cat: "accessories", price: 69, img: "https://picsum.photos/seed/maro-acc-necklace/500/500", trust: false },
 ];
-
 const CAT_LABEL = Object.fromEntries(CATEGORIES.map((c) => [c.id, c.label]));
 
 function waLink(message) {
