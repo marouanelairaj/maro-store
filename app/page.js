@@ -27,6 +27,7 @@ const PRODUCTS = [
   { id: 31, name: "شنطة يد نسائية", cat: "accessories", price: 249, img: "https://picsum.photos/seed/maro-acc-bag/500/500", trust: false },
   { id: 32, name: "سلسلة رقبة فضية", cat: "accessories", price: 69, img: "https://picsum.photos/seed/maro-acc-necklace/500/500", trust: false },
 ];
+
 const CAT_LABEL = Object.fromEntries(CATEGORIES.map((c) => [c.id, c.label]));
 
 function waLink(message) {
@@ -38,14 +39,14 @@ function TruckIcon() {
     <div className="truck">
       <div className="truck-bounce">
         <svg viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="2" y="14" width="42" height="16" rx="2" fill="#FFD700" />
-          <path d="M44 18H62L70 26V30H44V18Z" fill="#F4F8FB" />
-          <rect x="49" y="21" width="10" height="7" rx="1" fill="#0A5C9E" />
+          <rect x="4" y="14" width="38" height="16" rx="2" fill="#FFD700" />
+          <path d="M42 30 L42 20 Q42 18 44 18 L54 18 L70 26 L70 30 Z" fill="#F4F8FB" />
+          <rect x="46" y="21" width="10" height="6" rx="1" fill="#0A5C9E" />
+          <rect x="68" y="27" width="3" height="3" rx="1" fill="#FFD700" />
           <circle className="wheel" cx="16" cy="32" r="6" fill="#10202E" />
           <circle cx="16" cy="32" r="2.2" fill="#5B6B78" />
-          <circle className="wheel" cx="60" cy="32" r="6" fill="#10202E" />
-          <circle cx="60" cy="32" r="2.2" fill="#5B6B78" />
-          <rect x="6" y="18" width="14" height="4" rx="1" fill="#D9B400" />
+          <circle className="wheel" cx="58" cy="32" r="6" fill="#10202E" />
+          <circle cx="58" cy="32" r="2.2" fill="#5B6B78" />
         </svg>
       </div>
     </div>
@@ -368,4 +369,4 @@ export default function Home() {
     </>
   );
     }
-    
+         
