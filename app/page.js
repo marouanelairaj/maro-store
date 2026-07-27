@@ -91,6 +91,7 @@ export default function Home() {
     });
     setCartOpen(true);
   }
+  
   function changeQty(id, delta) {
     setCart((prev) =>
       prev
@@ -98,6 +99,7 @@ export default function Home() {
         .filter((l) => l.qty > 0)
     );
   }
+  
   function removeLine(id) {
     setCart((prev) => prev.filter((l) => l.id !== id));
   }
@@ -120,7 +122,7 @@ export default function Home() {
   function goTo(v) {
     setView(v);
     setMenuOpen(false);
-    if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "instant" });
+    if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   return (
